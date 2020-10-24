@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Zain517/express_practice/issues"
   },
-  "homepage": "https://github.com/Zain517/express_practice#readme"
+  "homepage": "https://github.com/Zain517/express_practice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
