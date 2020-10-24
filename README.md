@@ -1,9 +1,12 @@
 # Express_practice
+*Everything* is going according to **plan**.
 
 <br>
-I) ***open cmd*** <br>
-II) ***npm init*** <br>
-III) ***npm i express*** <br>
+
+1. **open cmd** <br>
+2. **npm init** <br>
+3. **npm i express** <br>
+
 
 <br>
 
