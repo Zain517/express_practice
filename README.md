@@ -1,7 +1,7 @@
-# express_practice
+# Express_practice
 
 <br>
 
 > ## Initial Concepts...!!!
 
-#### 1. require, module.exports
+#### 1. Setup first Express Server
