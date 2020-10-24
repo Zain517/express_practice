@@ -1,9 +1,9 @@
 # Express_practice
 
 <br>
-I) open cmd
-II) npm init
-III) npm i express
+I) ***open cmd*** <br>
+II) ***npm init*** <br>
+III) ***npm i express*** <br>
 
 <br>
 
