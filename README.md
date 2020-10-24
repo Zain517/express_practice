@@ -11,4 +11,6 @@ III) npm i express
 
 
 #### 1. Setup first Express Server
-#### 2. Express GET requests 
+#### 2. Express GET requests
+#### 3. Serving Static Files with Express
+
