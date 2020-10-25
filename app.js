@@ -55,15 +55,21 @@
 
 
 
-const express = require('express');
-const path = require('path');
+// const express = require('express');
+// const path = require('path');
 
-const app = express();
-app.use(express.static(path.join(__dirname,'asserts'))); 
-// app.use( '/public', express.static(path.join(__dirname,'asserts'))); //-Error arha don't know//alias for folder having asserts (main files) and we don't wana expose outside
+// const app = express();
+// app.use(express.static(path.join(__dirname,'asserts'))); 
+// // app.use( '/public', express.static(path.join(__dirname,'asserts'))); //-Error arha don't know//alias for folder having asserts (main files) and we don't wana expose outside
 
-app.get('/', (req, res)=>{
-  res.sendFile(path.join(__dirname,'asserts', 'index.html'));
-});
+// app.get('/', (req, res)=>{
+//   res.sendFile(path.join(__dirname,'asserts', 'index.html'));
+// });
 
-app.listen(5000);
+// app.listen(5000);
+
+
+
+//------------------------------------------------------------------//
+// part#04...
+// HTTP POST request w/ express and body parser module...
