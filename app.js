@@ -73,3 +73,30 @@
 //------------------------------------------------------------------//
 // part#04...
 // HTTP POST[working with Forms] request w/ express and body parser module...
+
+// npm install body-parser ==> parse form data for us
+
+// const bodyParser = require('body-parser');
+// const express = require('express');
+// const path = require('path');
+
+// const app = express();
+
+// app.use(express.static(path.join(__dirname,'Form'))); 
+// app.get('/', (req, res)=>{
+//   res.sendFile(path.join(__dirname,'Form', 'index.html'));
+// });
+
+// app.use(bodyParser.urlencoded({extended:false}));
+// app.post('/', (req, res)=>{
+//     console.log(req.body);
+//     //Data base work here...
+//     res.send('Succesfully Posted Data...!!!');
+//   });
+
+// app.listen(5000);
+
+//------------------------------------------------------------------//
+// part#05...
+// Working with JSON Data --- Express and Body Parser
+
