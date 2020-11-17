@@ -100,24 +100,30 @@
 // part#05...
 // Working with JSON Data --- Express and Body Parser
 
-const bodyParser = require('body-parser');
-const express = require('express');
-const path = require('path');
+// const bodyParser = require('body-parser');
+// const express = require('express');
+// const path = require('path');
 
-const app = express();
+// const app = express();
 
-app.use(express.static(path.join(__dirname,'Form'))); 
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
+// app.use(express.static(path.join(__dirname,'Form'))); 
+// app.use(bodyParser.urlencoded({extended:false}));
+// app.use(bodyParser.json());
 
-app.get('/', (req, res)=>{
-  res.sendFile(path.join(__dirname,'Form', 'index.html'));
-});
+// app.get('/', (req, res)=>{
+//   res.sendFile(path.join(__dirname,'Form', 'index.html'));
+// });
 
-app.post('/', (req, res)=>{
-    console.log(req.body);
-    //Data base work here...
-    res.json({success : true});
-  });
+// app.post('/', (req, res)=>{
+//     console.log(req.body);
+//     //Data base work here...
+//     res.json({success : true});
+//   });
 
-app.listen(5000);
+// app.listen(5000);
+
+
+
+//------------------------------------------------------------------//
+// part#06...
+// User Input Validation with Express and JOI
