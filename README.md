@@ -18,4 +18,5 @@
 #### 3. Serving Static Files with Express
 #### 4. HTTP POST request w/ express and body parser module
 #### 5. Working with JSON Data --- Express and Body Parser
+#### 6. User Input Validation with Express and JOI
 
