@@ -126,7 +126,7 @@
     </style>
   </head>
   <body>
-    <form action="/" method="POST" class="decor">
+    <form action="/" method="POST" id="form"  class="decor">
       <div class="form-left-decoration"></div>
       <div class="form-right-decoration"></div>
       <div class="circle"></div>
@@ -138,5 +138,23 @@
         <button type="submit" href="/">Submit</button>
       </div>
     </form>
+    <script src="js/jquery.floating-share.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(()=>{
+        $('#form').submit((e)=>{
+          e.preventDefault();
+          $.ajax({
+             url : '/',
+             type : 'post',
+             contentType : 'application/json',
+             data : JSON.stringify(('#form').serializeArray()),
+             success : (response)=>{
+              console.log(response);
+              console.log('Successfully got response');
+             }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
