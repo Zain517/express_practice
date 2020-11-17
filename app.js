@@ -127,3 +127,39 @@
 //------------------------------------------------------------------//
 // part#06...
 // User Input Validation with Express and JOI
+
+//-//  npm install joi
+
+const bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const Joi = require('joi');
+
+
+const app = express();
+
+app.use(express.static(path.join(__dirname,'Form'))); 
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
+
+app.get('/', (req, res)=>{
+  res.sendFile(path.join(__dirname,'Form', 'index.html'));
+});
+
+app.post('/', (req, res)=>{
+    console.log(req.body);
+    const schema = Joi.object().keys({
+        email : Joi.string().trim().email().required(),
+        password : Joi.string().min(5).max(10).required(),
+        phone : Joi.string().regex(/^\d{3}-\d{3}-\d{4}$/).required(),
+        birthday : Joi.date().max('1-1-2004').iso()
+    });
+    
+    
+   const { error } = schema.validate(req.body);
+   res.send(error);
+   
+
+});
+ 
+app.listen(5000);
